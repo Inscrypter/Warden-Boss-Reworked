@@ -1,0 +1,15 @@
+{
+    "type": "entity_properties",
+    "entity": "this",
+    "predicate": {
+        "slots": {
+            "weapon.*": {
+                "predicates": {
+                    "custom_data": {
+                        "wardenrw:item": "echoing_totem" 
+                    }
+                }
+            }
+        }
+    }
+}

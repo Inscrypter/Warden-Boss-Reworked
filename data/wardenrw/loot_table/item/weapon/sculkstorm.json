@@ -1,0 +1,152 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:enchanted_book",
+          "modifier": [
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:item_model": "wardenrw:sculkstorm",
+                "minecraft:rarity": "uncommon",
+                "item_name": {
+                  "translate": "item.wardenrw.sculkstorm.name",
+                  "color": "yellow"
+                },
+                "lore": [
+                    {
+                      "color": "white",
+                      "italic": false,
+                      "translate": "item.wardenrw.sculkstorm.description.1"
+                    },
+                    {
+                      "color": "white",
+                      "italic": false,
+                      "translate": "item.wardenrw.sculkstorm.description.2"
+                    },
+                    {
+                      "text": " "
+                    },
+                    {
+                      "translate": "Warden_Reworked",
+                      "color": "dark_aqua",
+                      "italic": true
+                    },
+                    {
+                      "text": " "
+                    }
+                ],
+                "custom_data": {
+                  "wardenrw:item": "sculkstorm"
+                },
+                "enchantments": {
+                  "wardenrw:technical/sculkstorm": 1
+                },
+                "attribute_modifiers": [
+                  {
+                    "id": "sculkstorm_attack_damage",
+                    "type": "attack_damage",
+                    "amount": 0,
+                    "operation": "add_value",
+                    "display": {
+                      "type": "override",
+                      "value": [
+                        {
+                          "color": "dark_green",
+                          "text": "7 ",
+                          "italic": false
+                        },
+                        {
+                          "translate": "attribute.name.attack_damage"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "id": "sculkstorm_attack_speed",
+                    "type": "attack_speed",
+                    "amount": -3.67,
+                    "operation": "add_value",
+                    "display": {
+                      "type": "override",
+                      "value": [
+                        {
+                          "color": "dark_green",
+                          "text": "0.33 ",
+                          "italic": false
+                        },
+                        {
+                          "translate": "attribute.name.attack_speed"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "id": "sculkstorm_mana_usage_1",
+                    "type": "attack_damage",
+                    "amount": 0,
+                    "operation": "add_value",
+                    "display": {
+                      "type": "override",
+                      "value": [
+                        {
+                          "translate": "attribute.wardenrw.mana_usage",
+                          "color": "dark_green",
+                          "with": [{"text": "2"}]
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "id": "sculkstorm_mana_usage_2",
+                    "type": "attack_damage",
+                    "amount": 0,
+                    "operation": "add_value",
+                    "display": {
+                      "type": "override",
+                      "value": [
+                        {
+                          "translate": "attribute.wardenrw.mana_usage",
+                          "color": "dark_green",
+                          "with": [{"text": "30"}]
+                        }
+                      ]
+                    }
+                  }
+                ],
+                "enchantment_glint_override": false,
+                "minimum_attack_charge": 1,
+                "kinetic_weapon": {
+                  "delay_ticks": 3,
+                  "contact_cooldown_ticks": 999999999,
+                  "damage_multiplier": 0.0,
+                  "forward_movement": 100.0,
+                  "dismount_conditions": {
+                    "max_duration_ticks": 999999999
+                  },
+                  "knockback_conditions": {
+                    "max_duration_ticks": 999999999
+                  },
+                  "damage_conditions": {
+                    "max_duration_ticks": 999999999
+                  }
+                },
+                "piercing_weapon": {
+
+                },
+                "attack_animation": {
+                  "type": "stab",
+                  "duration": 15
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

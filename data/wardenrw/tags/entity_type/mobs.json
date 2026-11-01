@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "#wardenrw:mobs_hostile",
+    "#wardenrw:mobs_passive",
+    "minecraft:end_crystal"
+  ]
+}

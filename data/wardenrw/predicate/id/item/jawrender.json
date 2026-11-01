@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:entity_scores",
+  "entity": "this",
+  "scores": {
+    "wardenrw.item.jawrender.id": {
+      "min": {
+        "type": "minecraft:score",
+        "target": {
+          "type": "minecraft:fixed",
+          "name": "#this"
+        },
+        "score": "wardenrw.item.jawrender.id"
+      },
+      "max": {
+        "type": "minecraft:score",
+        "target": {
+          "type": "minecraft:fixed",
+          "name": "#this"
+        },
+        "score": "wardenrw.item.jawrender.id"
+      }
+    }
+  }
+}

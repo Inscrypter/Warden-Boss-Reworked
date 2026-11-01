@@ -1,0 +1,115 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_sword",
+          "modifier": [
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:item_model": "wardenrw:jawrender",
+                "minecraft:rarity": "uncommon",
+                "item_name": {
+                  "translate": "item.wardenrw.jawrender.name",
+                  "color": "yellow"
+                },
+                "lore": [
+                    {
+                      "color": "white",
+                      "italic": false,
+                      "translate": "item.wardenrw.jawrender.description.1"
+                    },
+                    {
+                      "color": "white",
+                      "italic": false,
+                      "translate": "item.wardenrw.jawrender.description.2"
+                    },
+                    {
+                      "text": " "
+                    },
+                    {
+                      "translate": "Warden_Reworked",
+                      "color": "dark_aqua",
+                      "italic": true
+                    },
+                    {
+                      "text": " "
+                    }
+                ],
+                "custom_data": {
+                  "wardenrw:item": "jawrender"
+                },
+                "attribute_modifiers": [
+                  {
+                    "id": "jawrender_attack_damage",
+                    "type": "attack_damage",
+                    "amount": 6.5,
+                    "operation": "add_value",
+                    "display": {
+                      "type": "override",
+                      "value": [
+                        {
+                          "color": "dark_green",
+                          "text": "7.5 ",
+                          "italic": false
+                        },
+                        {
+                          "translate": "attribute.name.attack_damage"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "id": "jawrender_attack_speed",
+                    "type": "attack_speed",
+                    "amount": -2.89,
+                    "operation": "add_value",
+                    "display": {
+                      "type": "override",
+                      "value": [
+                        {
+                          "color": "dark_green",
+                          "text": "1.11 ",
+                          "italic": false
+                        },
+                        {
+                          "translate": "attribute.name.attack_speed"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "id": "jawrender_attack_range",
+                    "type": "entity_interaction_range",
+                    "amount": 0.5,
+                    "operation": "add_value",
+                    "display": {
+                      "type": "hidden"
+                    }
+                  }
+                ],
+                "max_damage": 1796,
+                "repairable": {
+                  "items": [
+                    "echo_shard"
+                  ]
+                },
+                "consumable": {
+                  "animation": "block",
+                  "consume_seconds": 999999999
+                },
+                "enchantments": {
+                  "wardenrw:technical/jawrender": 1
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

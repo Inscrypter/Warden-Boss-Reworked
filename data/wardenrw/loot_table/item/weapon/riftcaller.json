@@ -1,0 +1,131 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:enchanted_book",
+          "modifier": [
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:item_model": "wardenrw:riftcaller",
+                "minecraft:rarity": "uncommon",
+                "item_name": {
+                  "translate": "item.wardenrw.riftcaller.name",
+                  "color": "yellow"
+                },
+                "lore": [
+                    {
+                      "text": " "
+                    },
+                    {
+                      "color": "white",
+                      "italic": false,
+                      "translate": "item.wardenrw.riftcaller.description.1"
+                    },
+                    {
+                      "text": " "
+                    },
+                    {
+                      "translate": "Warden_Reworked",
+                      "color": "dark_aqua",
+                      "italic": true
+                    },
+                    {
+                      "text": " "
+                    }
+                ],
+                "custom_data": {
+                  "wardenrw:item": "riftcaller"
+                },
+                "attribute_modifiers": [
+                  {
+                    "id": "riftcaller_attack_damage",
+                    "type": "attack_damage",
+                    "amount": 0,
+                    "operation": "add_value",
+                    "display": {
+                      "type": "override",
+                      "value": [
+                        {
+                          "color": "dark_green",
+                          "text": "12 ",
+                          "italic": false
+                        },
+                        {
+                          "translate": "attribute.name.attack_damage"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "id": "riftcaller_attack_speed",
+                    "type": "attack_speed",
+                    "amount": -3,
+                    "operation": "add_value",
+                    "display": {
+                      "type": "override",
+                      "value": [
+                        {
+                          "color": "dark_green",
+                          "text": "0.17 ",
+                          "italic": false
+                        },
+                        {
+                          "translate": "attribute.name.attack_speed"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "id": "riftcaller_mana_usage_1",
+                    "type": "attack_damage",
+                    "amount": 0,
+                    "operation": "add_value",
+                    "display": {
+                      "type": "override",
+                      "value": [
+                        {
+                          "translate": "attribute.wardenrw.mana_usage",
+                          "color": "dark_green",
+                          "with": [{"text": "60"}]
+                        }
+                      ]
+                    }
+                  }
+                ],
+                "enchantment_glint_override": false,
+                "minimum_attack_charge": 1,
+                "kinetic_weapon": {
+                  "delay_ticks": 2,
+                  "contact_cooldown_ticks": 999999999,
+                  "damage_multiplier": 0.0,
+                  "forward_movement": 120.0,
+                  "dismount_conditions": {
+                    "max_duration_ticks": 999999999
+                  },
+                  "knockback_conditions": {
+                    "max_duration_ticks": 999999999
+                  },
+                  "damage_conditions": {
+                    "max_duration_ticks": 999999999
+                  }
+                },
+                "piercing_weapon": {
+
+                },
+                "attack_animation": {
+                  "type": "stab",
+                  "duration": 30
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

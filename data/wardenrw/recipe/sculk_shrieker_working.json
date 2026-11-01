@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " e ",
+    "ese",
+    " r "
+  ],
+  "key": {
+    "e": [
+      "minecraft:echo_shard"
+    ],
+    "s": [
+      "minecraft:sculk_shrieker"
+    ],
+    "r": [
+      "minecraft:respawn_anchor"
+    ]
+  },
+  "result": {
+    "id": "sculk_shrieker",
+    "count": 1,
+    "components": {
+      "block_state": {
+        "can_summon": "true"
+      },
+      "lore": [
+        {
+          "translate": ""
+        }
+      ]
+    }
+  }
+}

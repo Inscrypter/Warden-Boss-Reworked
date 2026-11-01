@@ -1,0 +1,13 @@
+{
+    "type": "location_check",
+    "predicate": {
+        "fluid": {
+            "fluids": [
+                "flowing_lava",
+                "flowing_water",
+                "lava",
+                "water"
+            ]
+        }
+    }
+}

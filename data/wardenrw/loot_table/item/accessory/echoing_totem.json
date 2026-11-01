@@ -1,0 +1,93 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:enchanted_book",
+          "modifier": [
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:item_model": "wardenrw:echoing_totem",
+                "minecraft:rarity": "uncommon",
+                "minecraft:enchantment_glint_override": false,
+                "item_name": {
+                  "translate": "item.wardenrw.echoing_totem.name",
+                  "color": "yellow"
+                },
+                "lore": [
+                    {
+                      "color": "white",
+                      "italic": false,
+                      "translate": "item.wardenrw.echoing_totem.description.1"
+                    },
+                    {
+                      "color": "white",
+                      "italic": false,
+                      "translate": "item.wardenrw.echoing_totem.description.2"
+                    },
+                    {
+                      "color": "white",
+                      "italic": false,
+                      "translate": "item.wardenrw.echoing_totem.description.3"
+                    },
+                    {
+                      "text": " "
+                    },
+                    {
+                      "translate": "Warden_Reworked",
+                      "color": "dark_aqua",
+                      "italic": true
+                    },
+                    {
+                      "text": " "
+                    }
+                ],
+                "custom_data": {
+                  "wardenrw:item": "echoing_totem"
+                },
+                "attribute_modifiers": [
+                  {
+                    "id": "echoing_totem_effect_1",
+                    "type": "attack_damage",
+                    "amount": 0,
+                    "operation": "add_value",
+                    "display": {
+                      "type": "override",
+                      "value": [
+                        {
+                          "translate": "attribute.wardenrw.magic_crit_chance",
+                          "color": "dark_green",
+                          "with": [{"text": "5"}]
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "id": "echoing_totem_effect_2",
+                    "type": "attack_damage",
+                    "amount": 0,
+                    "operation": "add_value",
+                    "display": {
+                      "type": "override",
+                      "value": [
+                        {
+                          "translate": "attribute.wardenrw.max_MP",
+                          "color": "dark_green",
+                          "with": [{"text": "20"}]
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

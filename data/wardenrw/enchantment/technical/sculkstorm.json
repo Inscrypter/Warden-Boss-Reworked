@@ -1,0 +1,60 @@
+{
+  "anvil_cost": 0,
+  "description": "",
+  "effects": {
+    "minecraft:post_piercing_attack": [
+      {
+        "effect": {
+          "type": "minecraft:all_of",
+          "effects": [
+            {
+                "type": "run_function",
+                "function": "wardenrw:item/weapon/magic/sculkstorm/burst/attack"
+            }
+          ]
+        },
+        "requirements": {
+          "type": "entity_scores",
+          "entity": "this",
+          "scores": {
+            "wardenrw.mp": {
+              "min": 30
+            }
+          }
+        }
+      },
+      {
+        "effect": {
+          "type": "run_function",
+          "function": "wardenrw:magic/mana/show_mp"
+        },
+        "requirements": {
+          "type": "inverted",
+          "term": {
+            "type": "entity_scores",
+            "entity": "this",
+            "scores": {
+              "wardenrw.mp": {
+                "min": 30
+              }
+            }
+          }   
+        }
+      }
+    ]
+  },
+  "max_cost": {
+    "base": 1,
+    "per_level_above_first": 0
+  },
+  "max_level": 1,
+  "min_cost": {
+    "base": 1,
+    "per_level_above_first": 0
+  },
+  "slots": [
+    "hand"
+  ],
+  "supported_items": "minecraft:enchanted_book",
+  "weight": 1
+}

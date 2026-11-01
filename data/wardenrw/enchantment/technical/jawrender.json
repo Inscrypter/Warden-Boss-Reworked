@@ -1,0 +1,39 @@
+{
+  "anvil_cost": 10,
+  "description": "",
+  "effects": {
+    "minecraft:post_attack": [
+      {
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "wardenrw:item/weapon/melee/jawrender/summon_jaw"
+        },
+        "requirements":{
+          "type": "entity_scores",
+          "entity": "attacker",
+          "scores": {
+            "wardenrw.item.jawrender.attack_counter": {
+              "min": 5
+            }
+          }
+        },
+        "enchanted": "attacker",
+        "affected": "victim"
+      }
+    ]
+  },
+  "max_cost": {
+    "base": 1,
+    "per_level_above_first": 1
+  },
+  "max_level": 1,
+  "min_cost": {
+    "base": 1,
+    "per_level_above_first": 1
+  },
+  "slots": [
+    "mainhand"
+  ],
+  "supported_items": "enchanted_book",
+  "weight": 5
+}

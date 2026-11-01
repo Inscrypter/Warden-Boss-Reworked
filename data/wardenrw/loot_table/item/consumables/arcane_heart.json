@@ -1,0 +1,58 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:enchanted_book",
+          "modifier": [
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:item_model": "wardenrw:arcane_heart",
+                "minecraft:rarity": "uncommon",
+                "item_name": {
+                  "translate": "item.wardenrw.arcane_heart.name",
+                  "color": "yellow"
+                },
+                "lore": [
+                    {
+                      "color": "white",
+                      "italic": false,
+                      "translate": "item.wardenrw.arcane_heart.description.1"
+                    },
+                    {
+                      "color": "red",
+                      "italic": false,
+                      "translate": "item.wardenrw.arcane_heart.description.2"
+                    },
+                    {
+                      "text": " "
+                    },
+                    {
+                      "translate": "Warden_Reworked",
+                      "color": "dark_aqua",
+                      "italic": true
+                    },
+                    {
+                      "text": " "
+                    }
+                ],
+                "custom_data": {
+                  "wardenrw:item": "arcane_heart"
+                },
+                "consumable": {
+                  "animation": "eat",
+                  "consume_seconds": 3,
+                  "sound": "block.sculk.break"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

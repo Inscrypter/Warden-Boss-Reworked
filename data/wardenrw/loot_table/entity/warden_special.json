@@ -1,0 +1,60 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "wardenrw:item/weapon/sculkstorm"
+        },
+        {
+          "type": "loot_table",
+          "value": "wardenrw:item/weapon/jawrender"
+        },
+        {
+          "type": "loot_table",
+          "value": "wardenrw:item/weapon/riftcaller"
+        }
+      ]
+    },
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:echo_shard",
+					"modifier": [
+						{
+							"type": "minecraft:set_count",
+							"count": {
+                "type": "uniform",
+                "min": 9,
+                "max": 20
+              }
+						}
+					]
+				}
+			]
+		},
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:loot_table",
+					"value": "wardenrw:item/accessory/echoing_totem",
+					"modifier": [
+						{
+							"type": "minecraft:set_count",
+							"count": {
+                  "type": "uniform",
+                  "min": -2,
+                  "max": 1
+              }
+						}
+					]
+				}
+			]
+		}
+  ]
+}
