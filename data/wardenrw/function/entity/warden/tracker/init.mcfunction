@@ -1,0 +1,2 @@
+execute store result score @s wardenrw.entity.warden.id summon marker store result score @s wardenrw.entity.warden.id store result score #this wardenrw.entity.warden.id run scoreboard players add #new wardenrw.entity.warden.id 1
+tag @e[type=marker,predicate=wardenrw:id/entity/warden] add wardenrw.warden.tracker
