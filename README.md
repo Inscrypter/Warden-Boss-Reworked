@@ -1,1 +1,1 @@
-Read more on Modrinth
+Read more on Modrinth: https://modrinth.com/datapack/warden-boss-rework
