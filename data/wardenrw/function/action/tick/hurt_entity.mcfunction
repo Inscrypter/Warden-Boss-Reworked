@@ -1,0 +1,1 @@
+scoreboard players reset @s wardenrw.damage_dealt

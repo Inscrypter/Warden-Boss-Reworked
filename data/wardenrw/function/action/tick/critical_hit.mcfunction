@@ -1,0 +1,1 @@
+execute if predicate wardenrw:enchantment/jawrender run function wardenrw:item/weapon/melee/jawrender/jaw_attack
