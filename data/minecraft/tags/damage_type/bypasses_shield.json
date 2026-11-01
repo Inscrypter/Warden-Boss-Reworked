@@ -1,0 +1,19 @@
+{
+  "values": [
+    "#minecraft:bypasses_armor",
+    "minecraft:cactus",
+    "minecraft:campfire",
+    "minecraft:dry_out",
+    "minecraft:falling_anvil",
+    "minecraft:falling_stalactite",
+    "minecraft:hot_floor",
+    "minecraft:in_fire",
+    "minecraft:lava",
+    "minecraft:lightning_bolt",
+    "minecraft:sweet_berry_bush",
+    "wardenrw:sculk_blob",
+    "wardenrw:sculk_soul",
+    "wardenrw:sculk_jaw",
+    "wardenrw:sculk_wave"
+  ]
+}
