@@ -1,0 +1,25 @@
+{
+  "criteria": {
+    "crit_damage": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "damage": {
+          "blocked": false,
+          "type": {
+            "is_direct": true
+          }
+        },
+        "entity": {
+            "type": "entity_properties",
+            "predicate": {
+                "entity_type": "warden"
+            },
+            "entity": "this"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "wardenrw:entity/warden/add_tag"
+  }
+}

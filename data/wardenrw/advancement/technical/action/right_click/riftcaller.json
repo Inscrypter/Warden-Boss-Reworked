@@ -1,0 +1,20 @@
+{
+  "criteria": {
+    "right click": {
+      "trigger": "using_item",
+      "conditions": {
+        "item": {
+            "predicates": {
+                "custom_data": {
+                    "wardenrw:item": "riftcaller"
+                }
+            }
+        }
+      }
+      
+    }
+  },
+  "rewards": {
+    "function": "wardenrw:item/weapon/magic/riftcaller/use"
+  }
+}

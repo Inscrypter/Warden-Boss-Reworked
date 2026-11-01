@@ -1,0 +1,15 @@
+{
+  "criteria": {
+    "kill": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "killing_blow": {
+          "is_direct": true
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "wardenrw:action/kill_entity"
+  }
+}

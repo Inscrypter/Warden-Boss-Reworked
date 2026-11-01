@@ -1,0 +1,19 @@
+{
+    "criteria": {
+        "consume": {
+            "trigger": "consume_item",
+            "conditions": {
+                "item": {
+                    "predicates": {
+                        "custom_data": {
+                            "wardenrw:item": "arcane_heart" 
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "wardenrw:item/consumable/arcane_heart/consumed"
+    }
+}

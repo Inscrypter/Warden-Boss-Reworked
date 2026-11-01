@@ -1,0 +1,18 @@
+{
+  "criteria": {
+    "crit_damage": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "damage": {
+          "blocked": false,
+          "type": {
+            "is_direct": true
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "wardenrw:action/hurt_entity"
+  }
+}

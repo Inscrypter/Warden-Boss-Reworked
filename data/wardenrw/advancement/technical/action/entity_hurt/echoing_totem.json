@@ -1,0 +1,30 @@
+{
+  "criteria": {
+    "crit_damage": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "damage": {
+          "blocked": false
+        },
+        "player": {
+          "type": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "slots": {
+              "weapon.*": {
+                "predicates": {
+                  "custom_data": {
+                    "wardenrw:item": "echoing_totem" 
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "wardenrw:item/accessory/echoing_totem/hurt"
+  }
+}

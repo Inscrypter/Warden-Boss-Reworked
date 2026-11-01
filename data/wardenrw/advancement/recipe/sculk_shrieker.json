@@ -1,0 +1,37 @@
+{
+  "criteria": {
+    "s": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:sculk_shrieker"
+          }
+        ]
+      }
+    },
+    "e": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:echo_shard"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "s"
+    ],
+    [
+      "e"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "wardenrw:sculk_shrieker_working"
+    ]
+  }
+}
